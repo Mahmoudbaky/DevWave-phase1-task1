@@ -861,3 +861,54 @@ footer {
     color: #92989f;
   }
 }
+
+/* Responsive Footer */
+@media (max-width: 768px) {
+  footer .content {
+    display: flex !important;
+    flex-direction: column !important;
+    gap: 32px;
+  }
+  .brand-identity,
+  .news-letter {
+    width: 100%;
+    align-items: flex-start;
+  }
+  .news-letter .input-wrapper {
+    flex-direction: column;
+    width: 100%;
+  }
+  .newsletter-input,
+  .newsletter-btn {
+    width: 100% !important;
+    border-radius: 32px !important;
+    margin-left: 0 !important;
+    margin-top: 8px;
+  }
+  .copyrights .flex {
+    flex-direction: column !important;
+    gap: 12px !important;
+    align-items: flex-start !important;
+  }
+  .links {
+    flex-wrap: wrap;
+    gap: 8px;
+  }
+}
+
+/* For very small screens */
+@media (max-width: 480px) {
+  footer .container {
+    padding: 16px !important;
+  }
+  .brand-identity .logo img {
+    width: 120px !important;
+    height: auto !important;
+  }
+  .news-letter p {
+    font-size: 16px !important;
+  }
+  .copyrights p {
+    font-size: 14px !important;
+  }
+}
