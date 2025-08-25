@@ -1,0 +1,680 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="icon" type="image/x-icon" href="favicon.ico" />
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <title>Document</title>
+  </head>
+  <body class="">
+    <!-- Header with Hamburger -->
+    <div class="header">
+      <header id="header" class="header container flex justify-between">
+        <button id="hamburger" class="hamburger" aria-label="Open menu">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+        <div class="header-content">
+          <div>
+            <img
+              style="mix-blend-mode: multiply"
+              src="public/images/image 9.png"
+              alt="Logo"
+            />
+          </div>
+          <nav>
+            <ul class="nav-list ul">
+              <li><a href="#home"> Home</a></li>
+              <li><a href="#trade">Trade</a></li>
+              <li><a href="#shop">Shop</a></li>
+              <li><a href="#contact">Contact Us</a></li>
+            </ul>
+          </nav>
+          <div class="header-contact-info">
+            <div
+              style="
+                display: flex;
+                flex-direction: column;
+                align-items: flex-end;
+                gap: 0;
+              "
+            >
+              <span style="color: #fff; font-size: 16px; margin-bottom: 0"
+                >Call Us</span
+              >
+              <span
+                style="
+                  color: #fff;
+                  font-size: 24px;
+                  font-weight: 700;
+                  margin-top: -2px;
+                "
+                >+1 2345 3456 45</span
+              >
+            </div>
+          </div>
+        </div>
+      </header>
+    </div>
+
+    <script>
+      // Hamburger menu toggle
+      const hamburger = document.getElementById("hamburger");
+      const headerContent = document.querySelector(".header-content");
+      function toggleMenu() {
+        headerContent.classList.toggle("show");
+      }
+      hamburger.addEventListener("click", toggleMenu);
+    </script>
+
+    <!-- Hero Section -->
+    <div class="hero">
+      <section
+        style="
+          align-items: start;
+          gap: 20px;
+          margin-top: 100px;
+          margin-bottom: 20px;
+        "
+        class="container flex flex-col"
+      >
+        <!-- Progress bar -->
+        <div
+          style="width: 333px; align-items: center"
+          class="flex justify-between"
+        >
+          <span style="color: #fff; font-size: 18px; font-weight: 400">01</span>
+          <div
+            style="
+              position: relative;
+              width: 80%;
+              height: 4px;
+              top: 50%;
+              left: 0;
+              right: 0;
+              background-color: #575757;
+            "
+          >
+            <div
+              style="
+                position: absolute;
+                top: 50%;
+                left: 0;
+                width: 25%;
+                height: 4px;
+                background-color: #fff;
+                transform: translateY(-50%);
+              "
+            ></div>
+          </div>
+          <span style="color: #fff; font-size: 18px; font-weight: 400">04</span>
+        </div>
+
+        <div class="flex flex-col gap" style="width: 720px">
+          <!-- All text -->
+          <div
+            style="color: #fff; flex-direction: column; align-items: flex-start"
+            class="flex"
+          >
+            <p
+              class="text"
+              style="font-weight: 600; margin-bottom: 0; font-size: 52px"
+            >
+              Solar Panel Installers In Plymouth
+            </p>
+            <p class="text" style="font-weight: 600; font-size: 20px">
+              Fueled is an award-winning technology consultancy that transforms
+              businesses by generating ideas, building products, and
+              accelerating growth.
+            </p>
+          </div>
+
+          <!-- All Buttons -->
+          <div style="gap: 12px" class="flex justify-start">
+            <button
+              style="color: #fff; background-color: #3cab90"
+              class="button"
+            >
+              Call Us Today
+            </button>
+            <button
+              style="color: #2a3334; background-color: #ffbb1c"
+              class="button"
+            >
+              Requst a call back
+            </button>
+          </div>
+        </div>
+      </section>
+    </div>
+
+    <!-- Info Section #1-->
+    <section
+      style="margin-top: 40px; margin-bottom: 40px"
+      class="container flex justify-between"
+    >
+      <!-- All text-->
+      <div style="width: 594px; gap: 10px" class="flex flex-col">
+        <h1 style="font-size: 42px; font-weight: 600">
+          The Friendliest Installers in the South-West
+        </h1>
+        <p style="font-size: 16px">
+          At Solidarity Solar our aims are to help our customers towards a
+          sustainable future and genuinely care about the quality of products we
+          use for our installs. We never sell you equipment you don't need and
+          will always advise to the best of our ability, No hard sell or pushy
+          sales tactics ever. We take pride in our work and do our best to make
+          sure that we meet, or exceed, our customers' expectations.
+        </p>
+        <div>
+          <p style="font-size: 20px">
+            <span style="color: #84bd3a; font-weight: 700">01/ </span
+            >Collaborate with 100+ leading
+          </p>
+          <p style="font-size: 20px">
+            <span style="color: #84bd3a; font-weight: 700">02/ </span>100+
+            leading universities and companies
+          </p>
+          <p style="font-size: 20px">
+            <span style="color: #84bd3a; font-weight: 700">03/ </span>leading
+            universities and companies
+          </p>
+          <p style="font-size: 20px">
+            <span style="color: #84bd3a; font-weight: 700">04/ </span
+            >universities and companies
+          </p>
+        </div>
+      </div>
+      <!-- Image -->
+      <div style="position: relative">
+        <img
+          style="width: 400px; height: 450px"
+          src="public/images/Rectangle 30.png"
+          alt="img"
+        />
+        <img
+          style="position: absolute; bottom: 20px; left: -20px; width: 200px"
+          src="public/images/Frame 7.png"
+          width="266"
+          alt="img"
+        />
+      </div>
+    </section>
+
+    <!-- Info Section #2-->
+    <div class="info-section-2">
+      <section style="align-items: start" class="container flex flex-col">
+        <div style="margin-top: 100px; width: 678px">
+          <div
+            style="margin-bottom: 20px; display: flex; flex-direction: column"
+          >
+            <h1 style="color: #fff; font-size: 42px; font-weight: 600">
+              Power that Doesn't Cost the Earth
+            </h1>
+            <p style="color: #fff; font-size: 20px; font-weight: 500">
+              If you need advice then give us a call on 07745593882 or hit the
+              button below to request a call back!
+            </p>
+          </div>
+          <button
+            style="color: #2a3334; background-color: #ffbb1c"
+            class="button"
+          >
+            Call Us Today
+          </button>
+        </div>
+      </section>
+    </div>
+
+    <!-- Solar Kits -->
+    <section
+      style="margin-top: 50px; margin-bottom: 50px; align-items: center"
+      class="flex flex-col container"
+    >
+      <!-- All text-->
+      <div style="align-items: center; width: 936px" class="flex flex-col">
+        <h1 style="color: #101828; font-size: 42px; font-weight: 600">
+          Solar Kits
+        </h1>
+        <p
+          style="
+            color: #475467;
+            font-size: 16px;
+            font-weight: 400;
+            text-align: center;
+          "
+        >
+          Complete solar system kits, ready for installation. They can be used
+          to supplement on-grid housing, a complete self-sustaining home or some
+          combination of the two.
+        </p>
+      </div>
+
+      <!-- All Cards-->
+      <div class="solar-cards-container">
+        <div class="solar-card">
+          <div class="card-image">
+            <img
+              src="public/images/solar-panels-meadow 2 (2).png"
+              alt="Off Grid Solar System"
+            />
+          </div>
+          <div class="card-content">
+            <h3>Off Grid</h3>
+            <p>
+              WOC has contributed to students so that they can work in their
+              dream company, we will continue to stick to our commitment to
+              create an advanced generation,
+            </p>
+            <button class="view-products-btn">
+              View Products <span class="arrow">→</span>
+            </button>
+          </div>
+        </div>
+        <div class="solar-card">
+          <div class="card-image">
+            <img
+              src="public/images/solar-panels-meadow 2 (1).png"
+              alt="On Grid Solar System"
+            />
+          </div>
+          <div class="card-content">
+            <h3>On Grid</h3>
+            <p>
+              WOC has contributed to students so that they can work in their
+              dream company, we will continue to stick to our commitment to
+              create an advanced generation,
+            </p>
+            <button class="view-products-btn">
+              View Products <span class="arrow">→</span>
+            </button>
+          </div>
+        </div>
+        <div class="solar-card">
+          <div class="card-image">
+            <img
+              src="public/images/solar-panels-meadow 2.png"
+              alt="Hybrid Solar System"
+            />
+          </div>
+          <div class="card-content">
+            <h3>Hybrid</h3>
+            <p>
+              WOC has contributed to students so that they can work in their
+              dream company, we will continue to stick to our commitment to
+              create an advanced generation,
+            </p>
+            <button class="view-products-btn">
+              View Products <span class="arrow">→</span>
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Info Section #4  need help-->
+    <section class="info-section-4 flex justify-center align-center">
+      <div class="container">
+        <div style="overflow: hidden" class="centered-card">
+          <h2 style="font-size: 42px; font-weight: 600; text-align: center">
+            Repairs Over Replacement
+          </h2>
+          <p style="text-align: center">
+            We approach every aspect of our business with sustainability in
+            mind. That's why we believe it's always worth trying to fix a system
+            before outright replacing it, wherever possible – it requires fewer
+            materials and is easier on the planet, as well as your wallet! If
+            another company tells you that your system needs to be replaced,
+            just give us a call and we'll see if we can repair it first.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Energy Innovators -->
+    <section class="energy-innovators-section">
+      <div class="container">
+        <div class="energy-innovators-layout">
+          <!-- All Text -->
+          <div class="energy-innovators-text">
+            <div class="energy-icon">
+              <img src="public/images/Featured icon.png" alt="img" />
+            </div>
+            <h2>Energy Innovators - the products we love</h2>
+            <p>
+              Lorem ipsum dolor sit amet consectetur. Suspendisse suspendisse
+              tempor et ipsum sit egestas nunc. Diam in cum a in.
+            </p>
+          </div>
+
+          <!-- All Cards -->
+          <div class="energy-cards-container">
+            <div class="energy-card">
+              <div class="energy-card-image">
+                <img
+                  style="mix-blend-mode: multiply"
+                  src="public/images/image 9.png"
+                  alt="SoliTek Solar Panels"
+                />
+              </div>
+              <div class="energy-card-content">
+                <h3>SoliTek - The European Manufacturer of Solar Panels</h3>
+                <p>
+                  We work closely importing solar panels from Solitek, they
+                  offer 30 year warranties on their panels and are constantly
+                  coming up with new ideas - including their solar greenhouse.
+                </p>
+                <button class="view-integration-btn">View integration →</button>
+              </div>
+            </div>
+            <div class="energy-card">
+              <div class="energy-card-image">
+                <img
+                  style="mix-blend-mode: multiply"
+                  src="public/images/image 9.png"
+                  alt="Sunsynk Inverter"
+                />
+              </div>
+              <div class="energy-card-content">
+                <h3>Sunsynk - No Power No Problem</h3>
+                <p>
+                  Sunsynk build the most versatile hybrid inverter on the
+                  market, designed to take up to 7kW of solar on a standard
+                  domestic supply - for simultaneous battery charging and
+                  household usage.
+                </p>
+                <button class="view-integration-btn">View integration →</button>
+              </div>
+            </div>
+            <div class="energy-card">
+              <div class="energy-card-image">
+                <img
+                  style="mix-blend-mode: multiply"
+                  src="public/images/image 9.png"
+                  alt="BYD Battery"
+                />
+              </div>
+              <div class="energy-card-content">
+                <h3>BYD - Electrifying Transport</h3>
+                <p>
+                  We use battery cells made by BYD, a market leader in lithium
+                  batteries. BYD batteries in cars, trucks, and buses - they
+                  build robust batteries.
+                </p>
+                <button class="view-integration-btn">View integration →</button>
+              </div>
+            </div>
+            <div class="energy-card">
+              <div class="energy-card-image">
+                <img
+                  style="mix-blend-mode: multiply"
+                  src="public/images/image 9.png"
+                  alt="REC Solar Panel"
+                />
+              </div>
+              <div class="energy-card-content">
+                <h3>REC - Solar's Most Trusted</h3>
+                <p>
+                  REC - Renewable Energy Corporation, are one of the longest
+                  trading names in solar. They know how to be truly sustainable
+                  in this industry - their panels are 100% lead free and have
+                  the most trusted warranty in solar.
+                </p>
+                <button class="view-integration-btn">View integration →</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Our values -->
+    <section class="our-values-section">
+      <div class="container">
+        <!-- All text -->
+        <div class="values-header">
+          <h2>Our Values</h2>
+          <p>More than 3000 users have been helped by World Online Course.</p>
+        </div>
+
+        <!-- All Cards -->
+        <div class="values-cards-container">
+          <div class="value-card">
+            <div class="value-icon">
+              <img
+                src="public/images/Customer Loyalty.png"
+                alt="Customer Care"
+              />
+            </div>
+            <h3>Customer Care</h3>
+            <p>
+              We're here to help you with solar panel installation in Devon and
+              Cornwall. If we were to sum ourselves up in a few words, those
+              would be "reliable, honest and friendly." We find our customers
+              agree! We're with you from the start of the project to the finish.
+            </p>
+          </div>
+
+          <div class="value-card">
+            <div class="value-icon">
+              <img src="public/images/Price Tag.png" alt="Price" />
+            </div>
+            <h3>Price</h3>
+            <p>
+              As I'm sure you'll have seen, solar systems don't tend to come
+              cheap. Our aim is to make solar power accessible to everyone, so
+              we price ourselves in a way that makes solar energy more
+              affordable. We're focused on helping you and on helping the
+              environment, rather than on turning a profit.
+            </p>
+          </div>
+
+          <div class="value-card">
+            <div class="value-icon">
+              <img src="public/images/Environment.png" alt="Sustainability" />
+            </div>
+            <h3>Sustainability</h3>
+            <p>
+              As we've said, we do this because we truly care about the planet
+              and about seeing people embrace a greener, more eco-friendly
+              approach to power. The world of green energy can be jargon-filled
+              and opaque, so we want to help educate people on the big and
+              little things they can do to protect our planet!
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- User Feedback -->
+    <section class="user-feedback-section">
+      <div class="container flex justify-between">
+        <!-- Left side - Quote icon and heading -->
+        <div class="testimonial-left">
+          <div>
+            <img src="public/images/quotes.png" alt="User Feedback" />
+          </div>
+          <h1 style="font-size: 48px">what they say about WOC</h1>
+          <p style="font-size: 18px">
+            More than 3000 users have been helped by World Online Course.
+          </p>
+        </div>
+
+        <!-- The user comment -->
+        <div class="user-comment">
+          <div class="flex justify-between">
+            <p style="color: #3cab90; font-size: 16px; font-weight: 700">
+              What they say
+            </p>
+            <div style="gap: 8px" class="flex align-center">
+              <div style="background-color: #6b6b6b" class="dot"></div>
+              <div style="background-color: #d9d9d9" class="dot"></div>
+              <div style="background-color: #d9d9d9" class="dot"></div>
+              <div style="background-color: #d9d9d9" class="dot"></div>
+              <div style="background-color: #d9d9d9" class="dot"></div>
+            </div>
+          </div>
+          <div style="max-width: 516px">
+            <p style="font-size: 24px; color: #101828">
+              “Studying at WOC is fun, the curriculum is complete, the
+              instructors are competent, and the assignments given are also
+              relevant to the current scope of work.”
+            </p>
+          </div>
+
+          <div class="flex justify-between align-center">
+            <div class="user-info">
+              <img
+                style="width: 60px; height: 60px"
+                src="/public/images/EDITED-27 - Copy 1.png"
+                alt="img"
+              />
+              <div style="width: 234px; gap: 10px" class="flex flex-col">
+                <span style="font-size: 16px; font-weight: 700"
+                  >Resky Fernanda</span
+                >
+                <span style="font-size: 16px"
+                  >Product Designer at Tokopedia</span
+                >
+              </div>
+            </div>
+            <div class="arrow-buttons">
+              <div
+                class="circle"
+                style="
+                  background: #fff;
+                  display: flex;
+                  align-items: center;
+                  justify-content: center;
+                  width: 48px;
+                  height: 48px;
+                  border-radius: 50%;
+                "
+              >
+                <img src="/public//images/Arrow---Left-2.png" alt="" />
+              </div>
+              <div
+                class="circle"
+                style="
+                  background: #fff;
+                  display: flex;
+                  align-items: center;
+                  justify-content: center;
+                  width: 48px;
+                  height: 48px;
+                  border-radius: 50%;
+                "
+              >
+                <img src="/public//images/Arrow---Right-2.png" alt="" />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+      <div class="container">
+        <div class="flex flex-col gap">
+          <div class="content grid grid-col-2 align-bottom mb">
+            <div class="brand-identity flex flex-col gap">
+              <div class="logo image-wrapper">
+                <img src="/public/images/image 9.png" alt="" />
+              </div>
+              <ul class="links text-white wrap">
+                <li class="link"><a href="#" class="">about</a></li>
+                <li class="link"><a href="#" class="">careers</a></li>
+                <li class="link"><a href="#" class="">press</a></li>
+                <li class="link"><a href="#" class="">customer care</a></li>
+                <li class="link"><a href="#" class="">services</a></li>
+              </ul>
+            </div>
+            <div class="news-letter text-white flex flex-col gap">
+              <p class="">Get the freshest news from us</p>
+              <form action="">
+                <div class="input-wrapper">
+                  <input
+                    type="email"
+                    class="newsletter-input"
+                    placeholder="Your email address..."
+                    style="
+                      border: none;
+                      outline: none;
+                      padding: 14px 20px;
+                      border-radius: 32px 0 0 32px;
+                      font-size: 16px;
+                      background: #2c3842;
+                      color: #fff;
+                      width: 220px;
+                    "
+                  />
+                  <button
+                    type="submit"
+                    class="newsletter-btn"
+                    style="
+                      background: #ffbb1c;
+                      color: #fff;
+                      border: none;
+                      border-radius: 0 32px 32px 0;
+                      padding: 14px 32px;
+                      font-size: 16px;
+                      font-weight: 600;
+                      cursor: pointer;
+                      margin-left: -4px;
+                      box-shadow: none;
+                    "
+                  >
+                    Subscribe
+                  </button>
+                </div>
+              </form>
+            </div>
+          </div>
+          <div class="line mb"></div>
+          <div class="copyrights">
+            <div class="flex gap justify-between">
+              <p class="flex gap wrap">
+                <span class="">Terms & Conditions </span
+                ><span class="">|</span> <span class="">Privacy Policy</span
+                ><span class="">|</span> <span class="">Accessibility</span
+                ><span class="">|</span>
+                <span class="">Legal</span>
+              </p>
+              <p class="">Copyright 2023 - Solidarity Solar Ltd</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
+
+<!-- <footer class="footer">
+      <div class="flex justify-between align-center">
+      
+        <div>
+          <img src="public/images/image 9.png" alt="Logo" />
+          <ul class="active">
+            <li><a style="font-size: 16px" href="#">About</a></li>
+            <li><a style="font-size: 16px" href="#">Careers</a></li>
+            <li><a style="font-size: 16px" href="#">Press</a></li>
+            <li><a style="font-size: 16px" href="#">Customer Care</a></li>
+            <li><a style="font-size: 16px" href="#">Services</a></li>
+          </ul>
+        </div>
+   
+        <div></div>
+      </div>
+      <div></div>
+      <div></div>
+    </footer> -->
