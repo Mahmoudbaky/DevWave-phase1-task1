@@ -288,7 +288,7 @@ li {
 }
 
 .hero {
-  background-image: url("public/images/solar-panels-meadow 1.png");
+  background-image: url("/public/images/solar-panels-meadow 1.png");
   background-size: cover;
   background-position: center;
   min-height: calc(100vh - 80px);
@@ -320,7 +320,7 @@ li {
 }
 
 .info-section-2 {
-  background-image: url("public/images/81161.png");
+  background-image: url("/public/images/81161.png");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -437,7 +437,7 @@ li {
 
 /* info-section-4 Styling */
 .info-section-4 {
-  background-image: url("public/images/asset.png");
+  background-image: url("/public/images/asset.png");
   background-size: cover;
   background-position: center;
   height: 505px;
